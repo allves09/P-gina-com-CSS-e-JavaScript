@@ -32,5 +32,15 @@ border-radius: 5px;/*Adicionar cantos arredondados ao botão*/
     <h1>Bem vindo ao Meu Site Simples</h1>
     <!--Criando o botão que mudará a cor de fundo da página-->
     <button onclick="mudarCor()"Mudar Cor de Fundo></button>
+    <script>
+        //Função JavaScript para mudar a cor de fundo da página
+        function mudarCor()
+            //Gerar uma cor aleatória em formato hexadecimal
+            var corAleatoria = '#' + Math.floor(Math.randon()*16777215).toString(16)
+            //Aplica nova cor ao fundo da página
+            document.body.style.background = corAleatoria;
+        }
+    </script>
+    
 </body>
 </html>
